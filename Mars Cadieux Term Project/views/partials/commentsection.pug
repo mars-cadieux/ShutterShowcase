@@ -1,0 +1,28 @@
+div#likeCommentWrapper
+	div.artworkLike
+		img#favourite(src="../favorite.svg") 
+		div.count#likes #{artwork.likes.length}
+	div.artworkComment
+		div.count#comments #{artwork.comments.length}
+		img#comment(src="../chat_bubble.svg")
+div#artworkInfo 
+	h4.artInfo #{artwork.title}, #{artwork.year}
+	h4.artInfo Photographer: #{artwork.artist}
+	h4.artInfo Event: #{artwork.category} 
+	h4.artInfo Venue: #{artwork.medium}
+	p.description #{artwork.description}
+h4#commentsHeader Comments:
+div#commentSection 
+	table#commentsTable
+		each comment in artwork.comments
+			tr.singleComment  
+				td @#{comment.reviewerUsername}: 
+				td #{comment.commentText}
+				td
+					if comment.reviewerUsername == username 
+						img.deleteComment(src="../delete.svg" id=comment.commentText)
+if !isOwnProfile
+	- let artworkURL = `/artworks/${artwork._id}`
+	form(action=artworkURL method="POST")
+		input(type='text' id="commentText" name="commentText" required)
+		input(type='submit' id="postComment" value='Post')

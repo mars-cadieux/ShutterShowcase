@@ -1,0 +1,430 @@
+[
+	{
+	  "Title": "VAMPA",
+	  "Artist": "Focal Point",
+	  "Year": "2023",
+	  "Category": "DNR Productions",
+	  "Medium": "Adelaide Hall",
+	  "Description": "Legendary female DJ VAMPA headlining a show at Adelaide Hall in Toronto. VAMPA is a bona fide genre-bender. Her ability to layer her signature delicate melodies over pounding synths evokes the sensation of swirling darkness and light together. Her energy is unmistakable — VAMPA has come to break our necks and suck our blood.",
+	  "Poster": "https://drive.google.com/uc?id=1H2l7QrO_X3-Q_xbaZy7DoxdpPNBbWUgM"
+	},
+
+	{
+		"Title": "MHOLY",
+		"Artist": "MediaMosaic",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "Up and coming DJ from Montreal MHOLY showing us her bass face.",
+		"Poster": "https://drive.google.com/uc?id=1JdIceiTPP3EOjkgJhpdUBCRJuYBzvHtI"
+	  },
+	  
+	{
+		"Title": "Frosty",
+		"Artist": "Life on Mars Media",
+		"Year": "2023",
+		"Category": "Solstice",
+		"Medium": "City at Night",
+		"Description": "Is it cold in here? Ottawa-based DJ Igluu serves up some sub-zero vibes and ice cold beats.",
+		"Poster": "https://drive.google.com/uc?id=16a5zNWbp1xfKohIXMfXVaWorURW9zppI"
+	  },
+	  
+	{
+		"Title": "Igluu in the City",
+		"Artist": "MediaMosaic",
+		"Year": "2023",
+		"Category": "Solstice",
+		"Medium": "City at Night",
+		"Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"Poster": "https://drive.google.com/uc?id=1oBAVsHbOXrALSN4qxlRqCvt0fEJdBhmw"
+	  },
+	  
+	{
+		"Title": "Sunday Vibes",
+		"Artist": "VibrantBass Visuals",
+		"Year": "2022",
+		"Category": "Sunday Sessions",
+		"Medium": "City at Night",
+		"Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"Poster": "https://drive.google.com/uc?id=1Xqb6uT3mHWXmwbJsW-9qT6DFsU4YiZqC"
+	  },
+	  
+	{
+		"Title": "Escapade AP Day 2",
+		"Artist": "Life on Mars Media",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=12-zAOvsHrKhcMlxPj3-mszU4-ggXXOaX"
+	  },
+	  
+	{
+		"Title": "Matfroninja B2B Stolli Fam Photo",
+		"Artist": "VibrantBass Visuals",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"Poster": "https://drive.google.com/uc?id=1CQO7nsMqJIyCP8Kit1KJh0BgTgtgdh3l"
+	  },
+	  
+	{
+		"Title": "Escapade AP Day 3",
+		"Artist": "Focal Point",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+		"Poster": "https://drive.google.com/uc?id=1rjCjRF6tIos2X4uNwBv7ksI1Tup3MCSf"
+	  },
+	  
+	{
+		"Title": "MHOLY in the Forest",
+		"Artist": "Life on Mars Media",
+		"Year": "2023",
+		"Category": "Midnight Forever Music Festival",
+		"Medium": "Delirium",
+		"Description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+		"Poster": "https://drive.google.com/uc?id=185PMm1INLNZ6z6J0_KiwqZB7o9XpRcTw"
+	  },
+	  
+	{
+		"Title": "Matfroninja in his Element",
+		"Artist": "Focal Point",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+		"Poster": "https://drive.google.com/uc?id=1WWOJsftdL_BM-U9_DPraagkk7OpKd996"
+	  },
+	  
+	{
+		"Title": "Mike Danglez in the Forest",
+		"Artist": "Diffracted Media",
+		"Year": "2023",
+		"Category": "Midnight Forever Music Festival",
+		"Medium": "Delirium",
+		"Description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+		"Poster": "https://drive.google.com/uc?id=1sakeRDJVTmo_52F1YqFLJpC2VvG_76wM"
+	  },
+	  
+	{
+		"Title": "Flix at Ritual",
+		"Artist": "VibrantBass Visuals",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+		"Poster": "https://drive.google.com/uc?id=1UiensP2lWFMwgdt6QaFkNf-y78C_7aSO"
+	  },
+	  
+	{
+		"Title": "netFLIX and Chill",
+		"Artist": "Focal Point",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "Montreal DJ Flix headlining Audioform's monthly bass event name Ritual at The 27 Club.",
+		"Poster": "https://drive.google.com/uc?id=15ArYzRvUSc4iemGDThrgt3AURBf6vMDM"
+	  },
+	  
+	{
+		"Title": "Dav Boa at Ritual",
+		"Artist": "NeonVibe Photo",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "Audioform OG Dav Boa Done at the one year anniversary of Audioform's Ritual event.",
+		"Poster": "https://drive.google.com/uc?id=1x3PnaC2hAV1_20zYNE0V8CZXK3_LAOon"
+	  },
+	  
+	{
+		"Title": "Synergistic",
+		"Artist": "Focal Point",
+		"Year": "2023",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Maverick's",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=17yh_95Hj4rNFO8oAo9toBQmkjJPfzA52"
+	  },
+	  
+	{
+		"Title": "Purple Smoke",
+		"Artist": "Aperture Addict",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+		"Poster": "https://drive.google.com/uc?id=1E9dtQ42YbtkwietztSA1PRYz4DHsPOrR"
+	  },
+	  
+	{
+		"Title": "Disco's not Dead",
+		"Artist": "Diffracted Media",
+		"Year": "2023",
+		"Category": "Undercover presents: Nutek",
+		"Medium": "Club SAW",
+		"Description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+		"Poster": "https://drive.google.com/uc?id=1MFkjCXLiafhTtgKGVnfrwFIJ267U3w6x"
+	  },
+	  
+	{
+		"Title": "FILTHY beats",
+		"Artist": "NeonVibe Photo",
+		"Year": "2022",
+		"Category": "'Till Death do us Party",
+		"Medium": "Collab Space Warehouse",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1kSuEPW2iO_4h29zXpn8MfEOtt8xFqC7u"
+	  },
+	  
+	{
+		"Title": "We Hate YOOKiE",
+		"Artist": "OvrUndr Exposed",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "DJ duo YOOKiE, comprised of twin brothers Anthony and Chris Alfaro, performing in Ottawa at Escapade Music Festival. YOOKiE has solidified their presence within the music scene with their unconventional and highly imaginative originals, remixes and edits, which have landed them major support from artists and fans alike. The duo is famous for having the crowd scream \"F*** YOOKiE\" during their live sets.",
+		"Poster": "https://drive.google.com/uc?id=1Wtg7ob2VwC0nDQojuyVvT3-993ss6VAr"
+	  },
+	  
+	{
+		"Title": "DJ Stuski at TDDUP",
+		"Artist": "Aperture Addict",
+		"Year": "2022",
+		"Category": "'Till Death do us Party",
+		"Medium": "Collab Space Warehouse",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1WQHGE6060zZTxx4Rpzde6Vk-3uK7D_7b"
+	  },
+	  
+	{
+		"Title": "Pure, raw Emotion",
+		"Artist": "OvrUndr Exposed",
+		"Year": "2023",
+		"Category": "Midnight Forever Music Festival",
+		"Medium": "Delirium",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1keShGK2ZFU8QiRtoYN2QJUs-_EKEEl3j"
+	  },
+	  
+	{
+		"Title": "Capturing Moments",
+		"Artist": "Diffracted Media",
+		"Year": "2022",
+		"Category": "Sunday Sessions",
+		"Medium": "City at Night",
+		"Description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+		"Poster": "https://drive.google.com/uc?id=1J5MYyVt0-B5beGvGQkyEL-kgELZ_DhZ0"
+	  },
+	  
+	{
+		"Title": "Dusk and Bass",
+		"Artist": "Aperture Addict",
+		"Year": "2022",
+		"Category": "Save the Bass Music Festival",
+		"Medium": "Delirium",
+		"Description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+		"Poster": "https://drive.google.com/uc?id=1GguXIHNlCSZcmqPuN8YNrC054aTA1Td-"
+	  },
+	  
+	{
+		"Title": "Just a Dog and a Drone",
+		"Artist": "PixelPulse Media",
+		"Year": "2022",
+		"Category": "Save the Bass Music Festival",
+		"Medium": "Delirium",
+		"Description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+		"Poster": "https://drive.google.com/uc?id=1vblWpr1N7eI6WcbQucd_FImnKwVFpYxx"
+	  },
+	  
+	{
+		"Title": "Stoned Level",
+		"Artist": "Aperture Addict",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "The one, the only, the legendary dubstep producer Stoned Level from Laval, QC playing in Ottawa for the official Escapade Music Festival afterparties hosted by Audioform.",
+		"Poster": "https://drive.google.com/uc?id=1RnXXRXS4Ld5kwF1bWUlEW_ltIQjV3BrS"
+	  },
+	  
+	{
+		"Title": "Bring out the Lasers",
+		"Artist": "NeonVibe Photo",
+		"Year": "2022",
+		"Category": "Intersection",
+		"Medium": "City at Night",
+		"Description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+		"Poster": "https://drive.google.com/uc?id=1w71h5JJprY-DldEZVT7F0araEVsDPHXJ"
+	  },
+	  
+	{
+		"Title": "Takin' it Old School",
+		"Artist": "PixelPulse Media",
+		"Year": "2022",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Cafe Dekcuf",
+		"Description": "Ottawa-based psytrance DJ Brainwerx performing an authentic vinyl set for FAK's event named \"Back to the Trance\".",
+		"Poster": "https://drive.google.com/uc?id=1llTBUeRFbLpj2RInCpOgMncA37kUHQbu"
+	  },
+	  
+	{
+		"Title": "House of Wayne",
+		"Artist": "TechnoFrame",
+		"Year": "2022",
+		"Category": "White Rabbit",
+		"Medium": "City at Night",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1Y9AxypZDyhm3XEefdsWsjJu4Esf4zTxK"
+	  },
+	  
+	{
+		"Title": "Sunbeam",
+		"Artist": "TechnoFrame",
+		"Year": "2023",
+		"Category": "Signal Events",
+		"Medium": "City at Night",
+		"Description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+		"Poster": "https://drive.google.com/uc?id=1Hy4mv8gX6l2UPK2fuQp7AQxZvDt6DXwr"
+	  },
+	  
+	{
+		"Title": "Unforgettable",
+		"Artist": "PixelPulse Media",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1NLOz6wZ0Eama1RsOoZjYmpCVnHm9pMyo"
+	  },
+	  
+	{
+		"Title": "Fireball",
+		"Artist": "ViewFinder Visionaries",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+		"Poster": "https://drive.google.com/uc?id=1KSeDDItuZ4iKA_yZhcuJ3SK6Nd-ksqmb"
+	  },
+	  
+	{
+		"Title": "Lemme see your Hands",
+		"Artist": "OvrUndr Exposed",
+		"Year": "2022",
+		"Category": "Save the Bass Music Festival",
+		"Medium": "Delirium",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1zgN_NDWkU9s4HaCRGC6uMsu_sO54k66e"
+	  },
+	{
+		"Title": "Bass = Saved",
+		"Artist": "OvrUndr Exposed",
+		"Year": "2022",
+		"Category": "Save the Bass Music Festival",
+		"Medium": "Delirium",
+		"Description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"Poster": "https://drive.google.com/uc?id=1kNLHhq6wzntH8F2Oq6cj-0i5HDMZBB7w"
+	  },
+	{
+		"Title": "Mobius...cube?",
+		"Artist": "ViewFinder Visionaries",
+		"Year": "2022",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Cafe Dekcuf",
+		"Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"Poster": "https://drive.google.com/uc?id=1KZ_UCsilDLZyj4MMlt9t4Pdx5rFSNf-s"
+	  },
+	  {
+		"Title": "Just Getting Started",
+		"Artist": "OvrUndr Exposed",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+		"Poster": "https://drive.google.com/uc?id=1Os2NNQXu98Wxlm7Bci6QpkAq761BFeVs"
+	  },
+	  {
+		"Title": "Ready to Rumble",
+		"Artist": "ViewFinder Visionaries",
+		"Year": "2023",
+		"Category": "Escapade Afterparties",
+		"Medium": "St Anthony's Banquet Hall",
+		"Description": "Known for timeless classics like “Digital Gangsta,” “Throwin Elbows,” and “Fang Banger”, the bass music prodigy came crashing into the new year with his Beatport #1 collaboration with Excision on “Rumble”, arguably the most highly anticipated dubstep EP of the year. Space Laces continued his reign with the release of his boldest project to date, 'Vaultage 001,' a 17-track mix series spanning across genres and years of unreleased material.",
+		"Poster": "https://drive.google.com/uc?id=1xGTKVgEpdX-A8ugK_mdwtypX9Zxomvwl"
+	  },
+	  {
+		"Title": "WAB and Friends",
+		"Artist": "ViewFinder Visionaries",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+		"Poster": "https://drive.google.com/uc?id=1RWoVt2WE6yf3E8BNvjdTDioBV4exKuDC"
+	  },
+	  {
+		"Title": "Spooky Szn",
+		"Artist": "TechnoFrame",
+		"Year": "2023",
+		"Category": "Ritual",
+		"Medium": "The 27 Club",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=11DryemQhobsJtNRWldAM4KRSpCEUfWIo"
+	  },
+	  {
+		"Title": "Two Friends",
+		"Artist": "GrooveLens Imagery",
+		"Year": "2023",
+		"Category": "Escapade Music Festival",
+		"Medium": "Landsdowne Park",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1K9DNvvUZtKD7pfJAC9UC6WS52xEov--G"
+	  },
+	  {
+		"Title": "Synergy",
+		"Artist": "BassBeats",
+		"Year": "2023",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Maverick's",
+		"Description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+		"Poster": "https://drive.google.com/uc?id=1hLWIChU1XglSymwcQRxTBqjbgBo-QaWb"
+	  },
+	  {
+		"Title": "Playing with Fire",
+		"Artist": "BassBeats",
+		"Year": "2023",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Maverick's",
+		"Description": "A long exposure shot of a raver spinning some LED poi. The color settings of the poi make them look like fireballs.",
+		"Poster": "https://drive.google.com/uc?id=1i33Lv6H_HxHYiqLCI0gV-MzEqTpHJC78"
+	  },
+	  {
+		"Title": "Vanpage",
+		"Artist": "BassBeats",
+		"Year": "2022",
+		"Category": "Intersection",
+		"Medium": "City at Night",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"Poster": "https://drive.google.com/uc?id=18ey7y9wd8eC2Ib4u_vVq1q6_8V1m9eDH"
+	  },
+	  {
+		"Title": "Yeehaw",
+		"Artist": "GrooveLens Imagery",
+		"Year": "2023",
+		"Category": "Midnight Forever Music Festival",
+		"Medium": "Delirium",
+		"Description": "",
+		"Poster": "https://drive.google.com/uc?id=1pZRBlRA27Jjzn2E3Oy2lAfhtOUGMXTfa"
+	  },
+	  {
+		"Title": "Frequilibrium",
+		"Artist": "Aperture Addict",
+		"Year": "2023",
+		"Category": "Freak Addiction Krew",
+		"Medium": "Cafe Dekcuf",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"Poster": "https://drive.google.com/uc?id=1I-0Xlohr5ultXR14MwM95gmtMqTJ0yja"
+	  }
+
+]

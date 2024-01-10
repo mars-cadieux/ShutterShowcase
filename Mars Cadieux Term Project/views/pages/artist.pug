@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+	head
+		title #{artist.name}
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href=`../${theme}`)
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+
+	body
+		include ../partials/header
+		div#artistHeader
+			div.profilePhoto
+					if(artist.photo)
+						img.profileThumbnail(src=artist.photo)
+					else
+						img.profileThumbnail(src="../user.png")
+			p.artistName #{artist.name}
+				span.handle (@#{artist.username})
+				- let followers = artist.followers.length ==  1 ? "Follower" : "Followers"
+				span.followers #{artist.followers.length} #{followers}
+			if !isOwnProfile
+				button.neonButton#followButton #{followButtonText} 
+			p#bio #{artist.bio}
+			div#photosWorkshops 
+				div#photosTab Photos
+				div#workshopsTab Workshops
+		div#artistPhotos 
+			each artwork in artist.artworks
+				div.singleArtwork
+					a(href=`/artworks/${artwork._id}`)
+						img.artworkImage(src=artwork.poster)
+					div.like
+						img#favourite(src="../favorite.svg") 
+						div.count#likes #{artwork.likes.length}
+					div.comment
+						div.count#comments #{artwork.comments.length}
+						img#comment(src="../chat_bubble.svg")
+					h4.artInfo #{artwork.title}, #{artwork.year}
+					h4.artInfo Event: #{artwork.category} 
+					h4.artInfo Venue: #{artwork.medium}
+					p.description #{artwork.description}
+		div#artistWorkshops(style="display:none")
+			each workshop in workshops
+				div.singleWorkshop
+					h3.workshopTitle #{workshop.title}
+					a.viewDetails(href=`/workshops/${workshop._id}`)
+						button.neonButton.viewDetailsButton View Details
+					- if(!isOwnProfile)
+						- let registerButtonText = workshop.attends ? "Unregister" : "Register"
+						button.neonButton.registerButton(id=workshop._id value=registerButtonText) #{registerButtonText}
+		if isOwnProfile && loginType == 'artist'
+			div#addPostAndWS
+				div#newPostNewWS
+					button.neonButton#newPost + New Post
+					button.neonButton#newWorkshop + New Workshop
+				div.modal#newPostModal 
+					div.modal-content 
+						div.closeDiv  
+							span.close#closePost X 
+						label(for="newPostTitle") Title:
+							input#newPostTitle(type="text" name="title" required)
+						br
+						label(for="newPostYear") Year:
+							input#newPostYear(type="text" name="year" required)
+						br
+						label(for="newPostCategory") Event:
+							input#newPostCategory(type="text" name="category" required)
+						br
+						label(for="newPostMedium") Venue:
+							input#newPostMedium(type="text" name="medium" required)
+						br
+						label(for="newPostDescription") Description:
+							input#newPostDescription(type="text" name="description" placeholder="Optional")
+						br
+						label(for="newPostPoster") Poster:
+							input#newPostPoster(type="text" name="poster" placeholder="URL for the image" required)
+						br
+						button.neonButton#uploadPost Upload					
+				div.modal#newWorkshopModal 
+					div.modal-content
+						div.closeDiv  
+							span.close#closeWS X 
+						label(for="newWorkshopTitle") Title:
+							input#newWorkshopTitle(type="text" name="title" required)
+						br
+						label(for="newWorkshopDay") Day:
+							input#newWorkshopDay(type="date" name="day" required)
+						br
+						label(for="newWorkshopTime") Time:
+							input#newWorkshopTime(type="time" name="time" required)
+						br
+						button.neonButton#uploadWorkshop Add
+		//- needed for client-side js
+		div(style="visibility: hidden")
+			input#themeText(value=theme)
+	script(src="../../artist.js")
+	script(src='../../theme.js')

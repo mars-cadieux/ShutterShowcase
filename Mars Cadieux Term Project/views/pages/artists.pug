@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+	head
+		title Artists
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href=`../${theme}`)
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+	body
+		include ../partials/header
+		div#artistsMain
+			- let count = 0
+			each artist in artists
+				- let artistURL = '/artists/' + artist._id
+				div.artistInfo
+					div.photoAndName
+						if(artist.photo)
+							img.profileThumbnail(src=artist.photo)
+						else
+							img.profileThumbnail(src="../user.png")
+						h4 #{artist.name}
+					div.bioAndButton
+						p.artistsBiography #{artist.bio}
+						a.neonButton(href=artistURL) View Profile
+				if count < artists.length -1
+					br
+					hr.artistDivider
+				- count++
+	script(src='../../theme.js')

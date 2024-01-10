@@ -1,0 +1,1154 @@
+
+/* global variables for colours */
+:root {
+	--bckgrnd: rgb(11, 9, 13);
+	--hdrLink: rgba(249, 137, 255, 0.741);
+	--hdrBordr: #e7aedf4a;
+	--txt: rgba(255, 239, 254, 0.884);
+	--neon: rgb(255, 0, 195);
+	--neonBrite: rgb(255, 125, 225);
+	--actvTab: rgb(39, 30, 41);
+	--inactvTab: rgb(47, 32, 53);
+	--selSlider: rgb(85 40 94);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bckgrnd);
+	color: var(--txt);
+}
+
+
+/**************************************************************
+ * 
+ * PUG Header
+ * 
+ **************************************************************/
+
+ #header {
+	margin-top: -7px;
+    position:sticky;
+	top: 0px;
+	text-align: center; 
+	border-bottom: 1px solid var(--hdrBordr);
+	background-color: var(--bckgrnd);
+	z-index: 10;
+}
+
+.headerLink {
+	border-left: 1px solid var(--hdrBordr);
+	border-right: 1px solid var(--hdrBordr);
+}
+
+.headerLink:link, .headerLink:visited {
+    text-decoration: none;
+    color: var(--hdrLink);
+    display: inline-block;
+    width: fit-content;
+    text-align: left;
+    padding: 15px 2vw;
+}
+
+.headerLink:hover {
+    box-shadow: inset 100px 100px #e7aedf30;
+	color: rgba(252, 189, 255, 0.877);
+}
+
+#headerLogo {
+	height: 36px;
+	float: left;
+	padding-top: 4px;
+}
+
+#themeSelect {
+	background-color: var(--bckgrnd) !important;
+	border: none !important;
+	float: right;
+	color: var(--hdrLink); 
+	margin-top: 10px;
+}
+
+/**************************************************************
+ * 
+ *      Login Page
+ * 
+ **************************************************************/
+
+ #loginMain{ 
+	max-width: 400px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#tabsWrapper {
+	max-width: 400px;
+}
+
+#patronTab, #artistTab {
+	width: 46%;
+	text-align: center !important;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-left: 2%;
+	padding-right: 2%;
+	top: 0px;
+	transition: transform .3s ease-out;
+}
+
+#patronTab:hover, #artistTab:hover {
+    cursor: pointer;
+	transform: translateY(-5px);
+}
+
+#patronTab {
+	float: left;
+	background-color: var(--actvTab);
+	border-top: 2px solid var(--neon)
+}
+
+#artistTab {
+	float: right;
+	background-color: var(--inactvTab);
+}
+
+#loginForm {
+	background-color: var(--actvTab);
+	padding: 40px;
+	padding-top: 60px;
+	top: -17px;
+	position: relative;
+	clear: both;
+}
+
+.login {
+	font-size: large;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=time] {
+	width: 100%;
+	padding: 8px;
+	margin-top: 4px;
+	margin-bottom: 12px;
+	border: 1px solid #d862c8b9;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #1e1523;
+	color: var(--txt);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	outline-color: rgba(251, 0, 255, 0.809)
+}
+
+input.error  {
+	border: 2px solid rgb(255, 0, 98);
+}
+
+input[type=submit] {
+	background-color: var(--bckgrnd);
+	color: var(--neon);
+	border:  var(--neon) 2px solid;
+	box-shadow: 
+		0 0 10px 0 var(--neon),
+		inset 0 0 10px 0 var(--neon);
+    padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size:large;
+	margin-top: 5px;
+    border-radius: 2px;
+	transition: 0.1s;
+	text-decoration: none;
+}
+
+input[type=submit]:hover {
+    cursor: pointer; 
+	color: var(--neonBrite);
+	border:  var(--neonBrite) 2px solid;
+	text-shadow: 
+		0 0 10px var(--neonBrite),
+		0 0 10px var(--neon);
+	box-shadow: 
+		0 0 15px 0 var(--neon),
+		inset 0 0 15px 0 var(--neon);
+}
+
+#loginButton, #registerButton {
+	color: var(--neon);
+	border:  var(--neon) 2px solid;
+    padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size:large;
+	margin-top: 5px;
+    border-radius: 2px;
+	transition: 0.2s;
+	text-decoration: none;
+
+	background-color: var(--actvTab);
+	margin-top: 10px;
+	transition: 0.1s;
+}
+
+#loginButton:hover , #registerButton:hover {
+    cursor: pointer; 
+	color: var(--neonBrite);
+	border:  var(--neonBrite) 2px solid;
+	text-shadow: 
+		0 0 10px var(--neon);
+	box-shadow: 
+		0 0 5px 0 var(--neon),
+		inset 0 0 5px 0 var(--neon);
+}
+
+#registerButton {
+	float: right;
+}
+
+
+
+
+/**************************************************************
+ * 
+ *      Artists Page
+ * 
+ **************************************************************/
+
+ #artistsMain {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 10px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	justify-content: center;
+}
+
+.artistInfo {
+	width: 450px;
+	border: 2px solid rgba(129, 1, 161, 0.418);
+	transition: 0.2s ease-out;
+}
+
+.artistInfo:hover {
+	box-shadow: 
+		/* inset 0 0 5px white, */
+		inset 0 0 15px rgba(129, 1, 161, 0.418);
+}
+
+.photoAndName {
+	width: 200px;
+	height: fit-content;
+	float: left;
+	text-align: center;
+	padding: 10px
+}
+
+.bioAndButton {
+	float: left;
+	padding: 20px;
+	height: 130px;
+}
+
+.profileThumbnail {
+	width: 100px;
+	height: 100px;
+	background-color: var(--inactvTab);
+	border-radius: 50%;
+}
+
+/*we use square borders instead of the artist divider in dark mode, so just don't show the divider */
+.artistDivider {
+	display: none;
+}
+
+.neonButton {
+	color: var(--neon);
+	border:  var(--neon) 2px solid;
+	box-shadow: 
+		0 0 10px 0 var(--neon),
+		inset 0 0 10px 0 var(--neon);
+    padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size:large;
+	margin-top: 5px;
+    border-radius: 2px;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.neonButton:hover, .neonButton:focus {
+    cursor: pointer; 
+	color: var(--neonBrite);
+	border:  var(--neonBrite) 2px solid;
+	text-shadow: 
+		0 0 10px var(--neonBrite),
+		0 0 10px var(--neon);
+	box-shadow: 
+		0 0 15px 0 var(--neon),
+		inset 0 0 15px 0 var(--neon);
+}
+
+.viewProfileButton {
+	position: relative;
+}
+
+.artistsBiography {
+	min-height: 70px;
+}
+
+
+
+
+/**************************************************************
+ * 
+ *      Browse page
+ * 
+ **************************************************************/
+
+select {
+    position: relative; 
+    font-size: large;   
+    background-color: rgba(59, 38, 58, 0.819); 
+    text-align: center;
+    padding: 4px;
+    border-radius: 0px;
+    min-width: 100px;
+	border:1px solid #92568bae;
+	color: var(--txt);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+#search {
+	width: 75vw;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#selectAndLabel{
+	min-width: 235px;
+	padding-top: 4.5px;
+}
+
+#searchForm {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+#submitSearch {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+    padding-right: 12px;
+	height: 32px;
+	margin-top: 4px; 
+}
+
+#searchbyLabel {
+	font-size: large;
+}
+
+#browsePhotos {
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: start;
+	justify-content: center;
+	gap: 5px;
+	clear: both;
+	padding-top: 20px;
+}
+
+.browse {
+	background-color: #c940b41e;
+	padding:5px;
+	height:500px;
+	position: relative;
+	flex-shrink:1;
+}
+
+#browseImage {
+	object-fit: contain;
+	width:100%;
+	height: 79%;
+	transition: 0.2s ease-out;
+}
+
+#browseImage:hover {
+	filter:brightness(115%);
+}
+
+#prevNextButtons{
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.prevButton, .nextButton {
+	display:inline-block;
+	width: 150px;
+	text-align: center;
+	margin: 0px 10px;
+}
+
+
+
+
+/**************************************************************
+ * 
+ *      Individual Artist Pages
+ * 
+ **************************************************************/
+
+ #artistHeader {
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100px;
+}
+
+#artistPhotos, #artistWorkshops {
+	width:1350px;
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--actvTab);
+	display: grid;
+	align-items: start;
+	grid-template-columns: 400px 400px 400px;
+	justify-content: center;
+	gap: 50px;
+	clear: both;
+	padding-top: 20px;
+}
+
+/* media queries to change the grid display to only have two columns, then one column when window gets too small to support the current number of columns. also change the width of the header to match the width of the grid */
+@media only screen and (max-width: 1350px) {
+	#artistPhotos, #browsePhotos, #artistWorkshops {
+		grid-template-columns: 400px 400px !important;
+		width: 850px !important;
+	}
+	#artistHeader {
+		width: 900px !important;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#artistPhotos, #browsePhotos, #artistWorkshops {
+		grid-template-columns: 400px !important;
+		width: 400px !important;
+	}
+	#artistHeader {
+		width: 450px !important;
+	}
+	#bio {
+		clear: both;
+		padding-top: 20px;
+	}
+	.followers {
+		float: left !important;
+	}
+}
+
+/****** note that this also determines styling for browse page ******/
+
+.singleArtwork {
+	width: 400px;
+}
+
+.artworkImage {
+	object-fit: contain; /* scales image to fit container while maintaing aspect ratio */
+	width:100%;
+	height:100%;
+	transition: 0.2s ease-out;
+}
+
+.artworkImage:hover {
+	cursor: pointer;
+	filter: brightness(125%);
+}
+
+.profilePhoto {
+	float:left;
+	padding-right: 15px;
+}
+
+.description {
+	font-style: italic;
+	clear: both;
+}
+
+.artistName {
+	font-size: x-large;
+	font-weight: 700;
+}
+
+.handle {
+	font-size: large;
+	font-weight: normal;
+	color: rgba(170, 170, 170, 0.601);
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.followers {
+	font-weight: normal;
+	padding: 5px;
+	float:right;
+}
+
+#followButton {
+	float: inline-end;
+	background-color: var(--bckgrnd);
+}
+
+.like, .comment {
+	width: 48%;
+	padding: 1%;
+}
+.like {
+	float: left;
+}
+
+#favourite, #comment {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.comment {
+	float: right; 
+	text-align: right;
+}
+
+/* like and comment counts next to heart and comment icons respectively */
+.count {
+	font-size: large;
+	padding-left: 5px;
+	margin-top: 2px;
+}
+
+/* this is the 'main' media query so-to-speak for formatting/styling for mobile. I capped it at 500px as that's the smallest width where our 400px photos still look okay. I changed the widths from hardcoded pixel values to percentages so that the photos can be as large as possible on the user's phone screen*/
+
+@media only screen and (max-width: 500px) {
+	#artistPhotos, #artistWorkshops, #browsePhotos {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding:2% !important;
+		width: 95% !important;
+	}
+	#artistHeader {
+		width: 99% !important;
+	}
+	.singleArtwork, .singleWorkshop {
+		width: 100% !important;
+	}
+	
+}
+
+/* fixing the header on smaller screens */
+@media only screen and (max-width: 700px) {
+	#headerLogo {
+		display: none;
+	}
+	.headerLink {
+		padding: 5px !important;
+	}
+	#themeSelect {
+		font-size: medium !important;
+		margin-top: 0px !important;
+	}
+	#selectAndLabel {
+		min-width: 210px !important;
+	}
+	#searchbyLabel {
+		font-size: medium !important;
+	}
+	#searchby {
+		font-size: medium !important;
+	}
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 10; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+}
+  
+/* Modal Content/Box */
+.modal-content {
+	background-color: var(--actvTab);
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #cc00ff76;
+	width: 50%; 
+	z-index: 11;
+}
+  
+/* The Close Button */
+.close {
+	color: black;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeDiv {
+	width: 100%;
+	height:32px;
+    text-align: right;
+}
+  
+.close:hover, .close:focus {
+	color: #aaa;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#uploadPost, #uploadWorkshop {
+	background-color: var(--actvTab);
+}
+
+/* the tabs to switch between workshops and photos */
+#photosTab, #workshopsTab {
+	width: 46%;
+	text-align: center !important;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
+	top: 0px;
+	transition: transform .3s ease-out;
+}
+
+#photosTab:hover, #workshopsTab:hover {
+    cursor: pointer;
+	/* transform: translateY(-5px); */
+}
+
+#photosTab {
+	float: left;
+	background-color: var(--actvTab);
+	border-top: 2px solid var(--neon);
+}
+
+#workshopsTab {
+	float: right;
+	background-color: var(--inactvTab);
+	border-top: 2px solid var(--inactvTab);
+}
+
+#bio {
+	min-height: 50px;
+}
+
+/********************* workshops styling ***********************/
+
+#artistWorkshops {
+	width: 1350px;
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--actvTab);
+	align-items: start;
+	grid-template-columns: 400px 400px 400px;
+	justify-content: center;
+	gap: 50px;
+	clear: both;
+	padding-top: 20px;
+	min-height: 65vh;
+}
+
+.singleWorkshop {
+	width: 360px;
+	height: 160px;
+	border: 2px solid rgba(200, 0, 255, 0.447);
+	padding: 20px;
+	padding-top: 60px;
+	text-align: center;
+	font-size: x-large;
+}
+
+.viewDetailsButton {
+	background-color: var(--actvTab);
+	float: left;
+}
+
+.registerButton {
+	float: right;
+	background-color: var(--actvTab);
+}
+
+.workshopTitle {
+	color:#00e3e3;
+	margin-bottom: 50px;
+	text-shadow: 
+		0 0 2px #dfffff,
+		0 0 15px #00e3e3;
+	font-family: monospace;
+	font-size: 1.8rem;
+}
+
+#workshopImage {
+	filter: invert(100%);
+	opacity:75%;
+}
+
+/********* footer with add post and add workshop buttons *********/
+
+#addPostAndWS {
+	width: 99%;
+	position: sticky;
+	bottom: 0;
+	background-color: var(--bckgrnd);
+	padding: 1% 0%;
+}
+
+#newPostNewWS {
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#newPost, #newWorkshop {
+	width: 200px;
+	margin: 0px 10px;
+	background-color: var(--bckgrnd);
+}
+
+
+
+
+/**************************************************************
+ * 
+ *      Individual Artwork / Workshop Pages
+ * 
+ **************************************************************/
+
+ #artworkMain, #workshopMain {
+	width: 95%;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+#artworkImage, #workshopImage {
+	object-fit: contain; /* scales image to fit container while maintaing aspect ratio */
+	width:100%;
+	height:100%;
+}
+
+/* #photoContainer {
+	max-height:750px;
+} */
+
+#workshopContainer {
+	width:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.artInfo, .wsInfo, .attendee {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.deleteComment {
+	filter: invert(100%);
+	position: relative;
+	margin-top: -3px;
+	float: right;
+}
+
+.deleteComment:hover {
+	cursor: pointer;
+	opacity:60%;
+}
+
+#favourite {
+	float:left;
+}
+
+#likes {
+	float: left;
+	margin-top: 3px;
+}
+
+#comment {
+	float: right;
+}
+
+#comments {
+	float:right;
+}
+
+.artworkLike, .artworkComment {
+	width: 49%;
+	padding-bottom: 15px;
+	margin-top: -5px;
+}
+.artworkLike {
+	float: left;
+}
+
+.artworkComment {
+	float: right; 
+	text-align: right;
+}
+
+#artistPageLink  {
+	padding-bottom: 20px;
+}
+
+#backToProfile:link, #backToProfile:visited {
+    text-decoration: none;
+    color: var(--neon);
+	font-weight: bold;
+}
+
+#backToProfile:hover {
+    font-weight: bold;
+	color: var(--neonBrite);
+    text-shadow: 
+		0 0 10px var(--neonBrite),
+		0 0 10px var(--neon);
+}
+
+#commentsHeader {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#commentsTable {
+	width: 100%;
+	border-collapse: collapse;
+	/* border: none; */
+	border-radius: 5px;
+}
+
+#commentsTable tr td {
+	padding:5px;
+	background-color: #2b1731b6;
+	border-bottom: 1px solid rgba(221, 76, 226, 0.411);
+	height: 21px;
+}
+
+tr td:first-child {
+    width: 1%;
+    white-space: nowrap;
+	color: #d4b6d1ba;
+	text-align: right;
+}
+
+tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+/* tbody tr:nth-child(odd) {
+	background-color: #2a0833b6;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #2b1731b6;
+} */
+
+.bi-arrow-left {
+	font-size: x-large;
+	font-weight: bolder;
+	vertical-align: -0.125em;
+	padding-right: 5px;
+}
+
+
+
+
+/**************************************************************
+ * 
+ *      'My Profile' Pages
+ * 
+ **************************************************************/
+#myprofileHeader {
+	padding-left: 15px;
+}
+
+#sliderWrapper {
+	width: 400px;
+	height: 32px;
+	background-color: var(--inactvTab);
+	border-radius: 13px;
+	border: 3px solid rgba(165, 1, 177, 0.778);
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#patronSlider, #artistSlider {
+	width: 47%;
+	padding: 5px;
+	height: 21px;
+	border-radius: 10px;
+	font-size: large;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#patronSlider {
+	float: left;
+	/* background-color: aliceblue; */
+}
+
+#artistSlider {
+	float: right;
+	/* background-color: rgb(208, 222, 233); */
+}
+
+#mynotifications, #myprofileLeft {
+	width:48%;
+	padding:1%;
+}
+
+#myprofileLeft {
+	float: left;
+}
+
+#mynotifications {
+	float: right;
+}
+
+#accountType {
+	clear: both;
+	padding-top: 50px;
+}
+
+#accType {
+	width:150px;
+	margin-left:auto;
+	margin-right: auto;
+	padding:5px;
+}
+
+fieldset{
+	margin-top: 30px;
+	border: 2px solid rgba(200, 0, 255, 0.758);
+}
+
+legend {
+	font-size: x-large;
+	padding: 0px 7px;
+}
+
+#notifHeader {
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+.unlike, .unfollow {
+	float: right;
+	padding: 5px 7px;
+	margin-top: 0px;
+	background-color: var(--bckgrnd);
+	margin-top: -2.5px;
+}
+
+/* delete comment button with added class 'onMyProfile' so that we don't mess up formatting of delete buttons in comment sections */
+.onMyProfile {
+	margin-top: 4px;
+}
+
+.myFollowingLink, .myLikesLink, .myCommentsLink, .myNotificationLink, .myFollowingLink:visited, .myLikesLink:visited, .myCommentsLink:visited, .myNotificationLink:visited  {
+	text-decoration: none;
+	color: var(--txt);
+	font-size: 1.1rem;
+	vertical-align: middle;
+	margin-top: 4px;
+	position: absolute;
+}
+
+.myFollowingLink:hover, .myLikesLink:hover, .myCommentsLink:hover {
+    color: var(--neonBrite);
+    text-shadow: 
+		0 0 10px var(--neonBrite),
+		0 0 10px var(--neon);
+}
+
+.myProfileRow {
+	vertical-align: middle;
+	height: 31px;
+	padding: 5px 0px;
+	transition: 0.2s ease-in;
+}
+
+.myProfileRow:hover {
+	background-color: rgba(223, 183, 225, 0.094);
+}
+
+.myNotificationLink {
+	padding: 10px;
+	margin-top: 0px;
+	width: 45%;
+	display: block;
+}
+
+.myNotificationLink {
+	background-color: rgb(255 164 255 / 18%);
+}
+
+.myNotificationLink:visited {
+	background-color: var(--bckgrnd);
+}
+
+.myFollower {
+	margin-top: 5px;
+}
+
+
+/**************************************************************
+ * 
+ *      Home Page
+ * 
+ **************************************************************/
+
+ .slideshow-container {
+	max-width: 1500px;
+	position: relative;
+	margin: auto;
+	box-sizing:border-box
+}
+
+.mySlides {
+	display: none;
+	box-sizing:border-box;
+	margin-right: 56px;
+	margin-left: 56px;
+}
+
+.prevSlide, .nextSlide {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: 56px;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	box-sizing:border-box
+}
+
+.nextSlide {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	box-sizing:border-box
+}
+
+.prevSlide:hover, .nextSlide:hover {
+ 	background-color: rgba(255, 255, 255, 0.163);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color:  #717171;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #bbb;
+}
+
+/* Slide animation */
+.slide {
+  	animation-name: slide;
+  	animation-duration: 5.1s;
+}
+
+@keyframes slide {
+	0% {transform: translateX(100vw);}
+	20% {transform: translateX(0px);}
+	80% {transform: translateX(0px);}
+	100% {transform: translateX(-100vw);}
+}
+
+.slideImage {
+	width:100%; 
+	object-fit: cover; /* crops image to fit container */
+}
+
+#videoContainer {
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logoVideo {
+	object-fit: contain;
+	margin-top: -150px;
+}
+
+/********* styling the header a bit differently for the home page ***********/
+
+#homeHeader {
+	text-align: center; 
+	padding-top: 7px;
+	padding-bottom: 15px;
+}
+
+.homeHeaderLink:link, .homeHeaderLink:visited {
+    text-decoration: none;
+    color: rgba(255, 209, 249, 0.871);
+    display: inline-grid;
+    gap: 0.1rem;
+    grid-template-columns: repeat(auto-fit, 150px);
+    min-width: fit-content;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: -30px;
+}
+
+
+.homeHeaderLink:hover {
+    font-weight: bold;
+    color: #c908ad;
+}

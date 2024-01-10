@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+	head
+		title #{user.username}
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href=`../${theme}`)
+		link(rel="icon" type="image/x-icon" href="../favicon.ico")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0")
+	body
+		include ../partials/header
+		div#myprofileHeader
+			h1 My Profile - @#{user.username}
+		div#myprofileLeft
+			div#myfollowing 
+				fieldset#followingFieldset 
+					legend Following:
+					each f in following
+						div.myProfileRow
+							a.myFollowingLink(href=`/artists/${f._id}`) #{f.name}
+							|
+							button.unfollow.neonButton(id = f._id) Unfollow
+			div#mylikes 
+				fieldset#likesFieldset 
+					legend Likes:
+					each like in likes 
+						div.myProfileRow
+							a.myLikesLink(href=`/artworks/${like.artwork._id}`) #{like.artwork.title} by #{like.artwork.artist}
+							|
+							button.unlike.neonButton(id = like.artwork._id) Unlike
+			div#mycomments 
+				fieldset#commentsFieldset 
+					legend Comments:
+					each comment in comments 
+						div.myProfileRow
+							a.myCommentsLink(href=`/artworks/${comment.artwork._id}`) #{comment.artwork.title} - "#{comment.commentText}"
+							img.deleteComment.onMyProfile(src="../delete.svg" id=`${comment.commentText}/${comment.artwork._id}`)
+			if(followers[0])
+				div#myfollowers
+				fieldset#followersFieldset 
+					legend Followers:
+					each f in followers 
+						div.myProfileRow 
+							p.myFollower @#{f.username}
+		div#mynotifications
+			h2#notifHeader Notifications: 
+			each notif in notifications 
+				- let notifText = notif.notificationType == "Workshop" ? "is hosting a new workshop" : "posted a new photo"
+				- let notifLink = notif.notificationType == "Workshop" ? `/workshops/${notif.postLink}` : `/artworks/${notif.postLink}`
+				a.myNotificationLink(href=notifLink) #{notif.triggeredBy.name} #{notifText}!
+				br
+				br
+		div#accountType
+			div#accType Account Type: 
+			div#sliderWrapper 
+				- let cName1 = user.userType == 'patron' ? 'selected' : 'unselected'
+				div#patronSlider(class=cName1) Patron
+				- let cName2 = user.userType == 'artist' ? 'selected' : 'unselected'
+				div#artistSlider(class=cName2) Photographer
+		div.modal#newPostModal 
+					div.modal-content 
+						div.closeDiv  
+							span.close#closePost X 
+						label(for="artistName") Your Photographer Name:
+							input#artistName(type="text" name="artistName" required)
+						br
+						label(for="newPostTitle") Title:
+							input#newPostTitle(type="text" name="title" required)
+						br
+						label(for="newPostYear") Year:
+							input#newPostYear(type="text" name="year" required)
+						br
+						label(for="newPostCategory") Event:
+							input#newPostCategory(type="text" name="category" required)
+						br
+						label(for="newPostMedium") Venue:
+							input#newPostMedium(type="text" name="medium" required)
+						br
+						label(for="newPostDescription") Description:
+							input#newPostDescription(type="text" name="description")
+						br
+						label(for="newPostPoster") Poster:
+							input#newPostPoster(type="text" name="poster" placeholder="URL for the image" required)
+						br
+						button.neonButton#uploadPost Save and Upload
+	script(src="../../myprofile.js")
+	script(src='../../theme.js')

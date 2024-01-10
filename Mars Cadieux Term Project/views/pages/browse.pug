@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+	head
+		title Browse
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href=`../../${theme}`)
+		link(rel="icon" type="image/x-icon" href="../../favicon.ico")
+	body
+		include ../partials/header
+		div#searchbar 
+			form#searchForm(action="/browse/search-results" method = "GET")
+				div#selectAndLabel
+					label#searchbyLabel(for="searchby") Search by: 
+						select#searchby(name="searchby")
+							option Photographer 
+							option Event 
+							option Venue 
+							option Title
+				input#search(type="text" name="search")
+				input#submitSearch(type="submit" value="Search")
+		div#browsePhotos 
+			each artwork in artworks
+				div.browse
+					a(href=`/artworks/${artwork._id}`)
+						img#browseImage(src=artwork.poster)
+					p.artInfo #{artwork.title}, #{artwork.year}
+					p.artInfo Photographer: #{artwork.artist}
+					p.artInfo Event: #{artwork.category} 
+					p.artInfo Venue: #{artwork.medium}
+		div#prevNextButtons 
+			if current > 1
+				- let url = "/browse?page=" + (current-1)
+				- if(qstring.length > 0){ url += "&" + qstring; }
+				a.prevButton.neonButton(href=url) Previous
+				| 
+			- url = "/browse?page=" + (current+1)
+			- if(qstring.length > 0){ url += "&" + qstring; }
+			if(nextButton)
+				a.nextButton.neonButton(href=url) Next
+	script(src='../../theme.js')
