@@ -1,3 +1,12 @@
+************************************************************************************
+*   2024 IMPORTANT NOTE:
+*   Google has changed their permissions recently and now cross-origin GET requests
+*   to Google Drive are denied. This means that none of the photos on this web app
+*   will load. All of the functionality of the web app is still there, the front end
+*   just looks a little bare without the photos. Currently in the process of
+*   determining a solution.
+************************************************************************************
+
 ShutterShowcase Initialization Instructions:
 
 1. Navigate to the folder titled "Mars Cadieux Term Project" in your file explorer and open a Node JS terminal in this folder.
